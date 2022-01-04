@@ -242,7 +242,7 @@ function encodeToRot13(str) {
  *   isString(new String('test')) => true
  */
 function isString(value) {
-  return typeof value === 'string';
+  return Object.prototype.toString.call(value) === '[object String]';
 }
 
 /**
